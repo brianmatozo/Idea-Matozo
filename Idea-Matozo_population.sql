@@ -76,7 +76,7 @@ insert into payment_methods (method_name) values ('Gift Card');
 insert into payment_methods (method_name) values ('E-Wallets');
 -- 50 productos
 insert into products (product_name, description, price, stock_quantity, category_id) values ('Ostrich - Prime Cut', 'Laceration w fb of l little finger w damage to nail', 43626.93, 18874, 5);
-insert into products (product_name, description, price, stock_quantity, category_id) values ('Bread - Pain Au Liat X12', 'Lacerat musc/fasc/tend long hd bicep, left arm, sequela', 12496.01, 47451, 10);
+insert into products (product_name, description, price, stock_quantity, category_id) values ('Bread - Pain Au Liat X12', 'Lacerat musc/fasc/tend long hd bicep, left arm, sequela', 1000, 100, 10);
 insert into products (product_name, description, price, stock_quantity, category_id) values ('Dried Peach', 'Lacerat musc/tend at lower leg level, right leg, sequela', 17088.68, 39797, 7);
 insert into products (product_name, description, price, stock_quantity, category_id) values ('Nut - Almond, Blanched, Whole', 'War op w direct blast effect of nuclr weapon, milt, sequela', 7181.27, 93094, 6);
 insert into products (product_name, description, price, stock_quantity, category_id) values ('Containter - 3oz Microwave Rect.', 'Occup of dune buggy injured in traffic accident, init encntr', 45495.76, 87350, 8);
@@ -126,63 +126,308 @@ insert into products (product_name, description, price, stock_quantity, category
 insert into products (product_name, description, price, stock_quantity, category_id) values ('Wine - Peller Estates Late', 'Strain of right Achilles tendon, initial encounter', 36681.03, 92929, 10);
 insert into products (product_name, description, price, stock_quantity, category_id) values ('Dill - Primerba, Paste', 'Bent bone of unsp ulna, 7thH', 34633.34, 34237, 6);
 -- 20 reviews
-insert into review (product_id, customer_id, rating, comment) values (45, 4, 7, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
-
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
+insert into review (product_id, customer_id, rating, comment) values (45, 4, 7, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.');
 insert into review (product_id, customer_id, rating, comment) values (43, 4, 3, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.');
-insert into review (product_id, customer_id, rating, comment) values (26, 14, 3, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.');
-insert into review (product_id, customer_id, rating, comment) values (43, 23, 2, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.');
-insert into review (product_id, customer_id, rating, comment) values (32, 11, 4, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.');
+insert into review (product_id, customer_id, rating, comment) values (26, 14, 3, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.');
+insert into review (product_id, customer_id, rating, comment) values (43, 23, 2, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.');
+insert into review (product_id, customer_id, rating, comment) values (32, 11, 4, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.');
 insert into review (product_id, customer_id, rating, comment) values (50, 3, 10, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.');
 insert into review (product_id, customer_id, rating, comment) values (49, 4, 1, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.');
-insert into review (product_id, customer_id, rating, comment) values (37, 17, 1, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
+insert into review (product_id, customer_id, rating, comment) values (37, 17, 1, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
 insert into review (product_id, customer_id, rating, comment) values (1, 26, 10, 'In congue. Etiam justo. Etiam pretium iaculis justo.');
-insert into review (product_id, customer_id, rating, comment) values (37, 13, 2, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
-insert into review (product_id, customer_id, rating, comment) values (22, 30, 8, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.');
-insert into review (product_id, customer_id, rating, comment) values (26, 16, 1, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.');
+insert into review (product_id, customer_id, rating, comment) values (37, 13, 2, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
+insert into review (product_id, customer_id, rating, comment) values (22, 30, 8, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.');
+insert into review (product_id, customer_id, rating, comment) values (26, 16, 1, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.');
 insert into review (product_id, customer_id, rating, comment) values (50, 19, 4, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.');
 insert into review (product_id, customer_id, rating, comment) values (10, 26, 1, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
-insert into review (product_id, customer_id, rating, comment) values (15, 2, 9, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
+insert into review (product_id, customer_id, rating, comment) values (15, 2, 9, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.');
 insert into review (product_id, customer_id, rating, comment) values (10, 7, 8, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.');
-insert into review (product_id, customer_id, rating, comment) values (16, 20, 9, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.');
-insert into review (product_id, customer_id, rating, comment) values (18, 23, 3, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
-
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.');
-insert into review (product_id, customer_id, rating, comment) values (44, 29, 6, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
+insert into review (product_id, customer_id, rating, comment) values (16, 20, 9, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.');
+insert into review (product_id, customer_id, rating, comment) values (18, 23, 3, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.');
+insert into review (product_id, customer_id, rating, comment) values (44, 29, 6, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.');
 insert into review (product_id, customer_id, rating, comment) values (9, 24, 0, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.');
--- promotion
-insert into promotions (promotion_name, description, discount_type, discount_value, min_purchase_amount, start_date, end_date, active) values ('Business-focused incremental infrastructure', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 'Percentage', 42.54, 0, '2024-2-11', '2024-2-17', TRUE);
--- 5 cart
-insert into customer_cart (customer_id, status, shipping_address, payment_method_id) values (16, 'Delivered', '03503 Sloan Pass', 7);
-insert into customer_cart (customer_id, status, shipping_address, payment_method_id) values (26, 'Pending', '9 Moland Street', 2);
-insert into customer_cart (customer_id, status, shipping_address, payment_method_id) values (22, 'Pending', '26 Village Street', 1);
-insert into customer_cart (customer_id, status, shipping_address, payment_method_id) values (29, 'Delivered', '48 Artisan Pass', 8);
-insert into customer_cart (customer_id, status, shipping_address, payment_method_id) values (18, 'Delivered', '11 Bashford Trail', 6);
--- 6 cart inventories
-insert into customer_cartitems (cart_id, product_id, quantity) values (1, 45, 6);
-insert into customer_cartitems (cart_id, product_id, quantity) values (2, 30, 2);
-insert into customer_cartitems (cart_id, product_id, quantity) values (3, 5, 6);
-insert into customer_cartitems (cart_id, product_id, quantity) values (4, 49, 3);
-insert into customer_cartitems (cart_id, product_id, quantity) values (5, 12, 8);
+-- promociones
+INSERT INTO promotions (promotion_name, description, discount_type, discount_value, min_purchase_amount, start_date, end_date, active)
+VALUES
+	('Liquidacion', 'Liquidacion porque si', 'Percentage', 30.00, 1000000, '2000-01-01','2099-12-31',TRUE),
+    ('Promo Navidena', 'Promo navidena por navidad', 'Percentage', 15.00, 500000, '2000-01-01','2099-12-31',TRUE),
+    ('Black Friday', 'Black Friday pero para siempre', 'FixedAmount', 10, 50000, '2000-01-01','2099-12-31',TRUE);
+-- 50 orders
+insert into orders (user_id, payment_method_id, status) values (8, 2, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (6, 2, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (5, 3, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (3, 2, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (8, 6, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (7, 2, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (8, 2, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (5, 1, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (3, 4, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (2, 4, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (8, 1, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (7, 3, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (5, 6, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (6, 2, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (8, 1, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (4, 5, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (2, 1, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (1, 5, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (1, 7, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (8, 5, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (3, 4, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (9, 8, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (1, 4, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (2, 4, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (6, 1, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (10, 9, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (9, 8, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (3, 5, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (6, 6, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (1, 2, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (1, 3, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (5, 4, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (6, 2, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (3, 4, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (7, 8, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (6, 6, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (6, 2, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (9, 6, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (3, 7, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (9, 4, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (9, 8, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (8, 7, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (3, 3, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (4, 6, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (3, 1, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (5, 5, 'Pending');
+insert into orders (user_id, payment_method_id, status) values (6, 7, 'Shipped');
+insert into orders (user_id, payment_method_id, status) values (7, 4, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (9, 8, 'Delivered');
+insert into orders (user_id, payment_method_id, status) values (1, 3, 'Pending');
+-- 75 orderitems
+insert into orderitems (order_id, product_id, quantity) values (30, 26, 40);
+insert into orderitems (order_id, product_id, quantity) values (49, 31, 10);
+insert into orderitems (order_id, product_id, quantity) values (41, 13, 47);
+insert into orderitems (order_id, product_id, quantity) values (28, 28, 32);
+insert into orderitems (order_id, product_id, quantity) values (40, 41, 5);
+insert into orderitems (order_id, product_id, quantity) values (16, 47, 19);
+insert into orderitems (order_id, product_id, quantity) values (36, 45, 1);
+insert into orderitems (order_id, product_id, quantity) values (30, 41, 3);
+insert into orderitems (order_id, product_id, quantity) values (23, 39, 23);
+insert into orderitems (order_id, product_id, quantity) values (18, 37, 32);
+insert into orderitems (order_id, product_id, quantity) values (22, 40, 20);
+insert into orderitems (order_id, product_id, quantity) values (5, 18, 24);
+insert into orderitems (order_id, product_id, quantity) values (38, 42, 26);
+insert into orderitems (order_id, product_id, quantity) values (22, 48, 8);
+insert into orderitems (order_id, product_id, quantity) values (38, 25, 34);
+insert into orderitems (order_id, product_id, quantity) values (33, 48, 15);
+insert into orderitems (order_id, product_id, quantity) values (4, 12, 41);
+insert into orderitems (order_id, product_id, quantity) values (46, 5, 9);
+insert into orderitems (order_id, product_id, quantity) values (21, 9, 42);
+insert into orderitems (order_id, product_id, quantity) values (9, 33, 40);
+insert into orderitems (order_id, product_id, quantity) values (40, 1, 25);
+insert into orderitems (order_id, product_id, quantity) values (47, 33, 16);
+insert into orderitems (order_id, product_id, quantity) values (14, 9, 3);
+insert into orderitems (order_id, product_id, quantity) values (29, 22, 40);
+insert into orderitems (order_id, product_id, quantity) values (33, 12, 8);
+insert into orderitems (order_id, product_id, quantity) values (9, 40, 36);
+insert into orderitems (order_id, product_id, quantity) values (38, 37, 49);
+insert into orderitems (order_id, product_id, quantity) values (7, 12, 17);
+insert into orderitems (order_id, product_id, quantity) values (34, 35, 15);
+insert into orderitems (order_id, product_id, quantity) values (5, 12, 28);
+insert into orderitems (order_id, product_id, quantity) values (42, 18, 36);
+insert into orderitems (order_id, product_id, quantity) values (49, 31, 15);
+insert into orderitems (order_id, product_id, quantity) values (4, 4, 5);
+insert into orderitems (order_id, product_id, quantity) values (9, 47, 45);
+insert into orderitems (order_id, product_id, quantity) values (5, 34, 1);
+insert into orderitems (order_id, product_id, quantity) values (11, 11, 5);
+insert into orderitems (order_id, product_id, quantity) values (5, 49, 7);
+insert into orderitems (order_id, product_id, quantity) values (43, 32, 37);
+insert into orderitems (order_id, product_id, quantity) values (47, 3, 42);
+insert into orderitems (order_id, product_id, quantity) values (22, 30, 44);
+insert into orderitems (order_id, product_id, quantity) values (40, 7, 42);
+insert into orderitems (order_id, product_id, quantity) values (27, 17, 44);
+insert into orderitems (order_id, product_id, quantity) values (36, 27, 44);
+insert into orderitems (order_id, product_id, quantity) values (31, 17, 39);
+insert into orderitems (order_id, product_id, quantity) values (30, 8, 31);
+insert into orderitems (order_id, product_id, quantity) values (7, 30, 40);
+insert into orderitems (order_id, product_id, quantity) values (31, 42, 28);
+insert into orderitems (order_id, product_id, quantity) values (10, 38, 35);
+insert into orderitems (order_id, product_id, quantity) values (8, 12, 49);
+insert into orderitems (order_id, product_id, quantity) values (46, 50, 40);
+insert into orderitems (order_id, product_id, quantity) values (1, 30, 49);
+insert into orderitems (order_id, product_id, quantity) values (6, 30, 33);
+insert into orderitems (order_id, product_id, quantity) values (35, 1, 37);
+insert into orderitems (order_id, product_id, quantity) values (43, 45, 26);
+insert into orderitems (order_id, product_id, quantity) values (35, 17, 18);
+insert into orderitems (order_id, product_id, quantity) values (24, 36, 27);
+insert into orderitems (order_id, product_id, quantity) values (29, 12, 42);
+insert into orderitems (order_id, product_id, quantity) values (4, 42, 6);
+insert into orderitems (order_id, product_id, quantity) values (37, 43, 14);
+insert into orderitems (order_id, product_id, quantity) values (28, 46, 29);
+insert into orderitems (order_id, product_id, quantity) values (30, 16, 29);
+insert into orderitems (order_id, product_id, quantity) values (50, 24, 12);
+insert into orderitems (order_id, product_id, quantity) values (8, 2, 47);
+insert into orderitems (order_id, product_id, quantity) values (13, 49, 16);
+insert into orderitems (order_id, product_id, quantity) values (27, 43, 16);
+insert into orderitems (order_id, product_id, quantity) values (22, 31, 32);
+insert into orderitems (order_id, product_id, quantity) values (42, 3, 23);
+insert into orderitems (order_id, product_id, quantity) values (33, 47, 25);
+insert into orderitems (order_id, product_id, quantity) values (30, 20, 10);
+insert into orderitems (order_id, product_id, quantity) values (8, 45, 4);
+insert into orderitems (order_id, product_id, quantity) values (17, 34, 40);
+insert into orderitems (order_id, product_id, quantity) values (25, 17, 18);
+insert into orderitems (order_id, product_id, quantity) values (13, 42, 5);
+insert into orderitems (order_id, product_id, quantity) values (33, 35, 29);
+insert into orderitems (order_id, product_id, quantity) values (49, 48, 16);
+-- 50 customer order
+insert into customer_cart (customer_id, status, payment_method_id) values (23, 'Shipped', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (14, 'Shipped', 9);
+insert into customer_cart (customer_id, status, payment_method_id) values (13, 'Delivered', 1);
+insert into customer_cart (customer_id, status, payment_method_id) values (17, 'Pending', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (14, 'Shipped', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (28, 'Shipped', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (12, 'Delivered', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (5, 'Shipped', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (10, 'Shipped', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (11, 'Pending', 6);
+insert into customer_cart (customer_id, status, payment_method_id) values (29, 'Shipped', 6);
+insert into customer_cart (customer_id, status, payment_method_id) values (21, 'Delivered', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (15, 'Pending', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (14, 'Shipped', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (5, 'Delivered', 7);
+insert into customer_cart (customer_id, status, payment_method_id) values (3, 'Pending', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (16, 'Shipped', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (29, 'Shipped', 8);
+insert into customer_cart (customer_id, status, payment_method_id) values (18, 'Delivered', 7);
+insert into customer_cart (customer_id, status, payment_method_id) values (4, 'Delivered', 8);
+insert into customer_cart (customer_id, status, payment_method_id) values (28, 'Shipped', 8);
+insert into customer_cart (customer_id, status, payment_method_id) values (5, 'Shipped', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (29, 'Delivered', 7);
+insert into customer_cart (customer_id, status, payment_method_id) values (10, 'Pending', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (8, 'Shipped', 6);
+insert into customer_cart (customer_id, status, payment_method_id) values (22, 'Pending', 1);
+insert into customer_cart (customer_id, status, payment_method_id) values (6, 'Shipped', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (30, 'Pending', 9);
+insert into customer_cart (customer_id, status, payment_method_id) values (25, 'Delivered', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (21, 'Shipped', 4);
+insert into customer_cart (customer_id, status, payment_method_id) values (10, 'Shipped', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (11, 'Delivered', 7);
+insert into customer_cart (customer_id, status, payment_method_id) values (11, 'Pending', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (24, 'Delivered', 4);
+insert into customer_cart (customer_id, status, payment_method_id) values (28, 'Pending', 6);
+insert into customer_cart (customer_id, status, payment_method_id) values (3, 'Shipped', 9);
+insert into customer_cart (customer_id, status, payment_method_id) values (3, 'Pending', 9);
+insert into customer_cart (customer_id, status, payment_method_id) values (8, 'Shipped', 6);
+insert into customer_cart (customer_id, status, payment_method_id) values (12, 'Delivered', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (2, 'Shipped', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (14, 'Shipped', 1);
+insert into customer_cart (customer_id, status, payment_method_id) values (10, 'Delivered', 4);
+insert into customer_cart (customer_id, status, payment_method_id) values (14, 'Delivered', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (1, 'Delivered', 5);
+insert into customer_cart (customer_id, status, payment_method_id) values (5, 'Pending', 3);
+insert into customer_cart (customer_id, status, payment_method_id) values (28, 'Delivered', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (24, 'Pending', 2);
+insert into customer_cart (customer_id, status, payment_method_id) values (13, 'Pending', 8);
+insert into customer_cart (customer_id, status, payment_method_id) values (21, 'Shipped', 8);
+insert into customer_cart (customer_id, status, payment_method_id) values (21, 'Delivered', 3);
+-- 100 customer order details
+insert into customer_cartitems (cart_id, product_id, quantity) values (12, 29, 15);
+insert into customer_cartitems (cart_id, product_id, quantity) values (21, 25, 30);
+insert into customer_cartitems (cart_id, product_id, quantity) values (5, 17, 42);
+insert into customer_cartitems (cart_id, product_id, quantity) values (19, 31, 28);
+insert into customer_cartitems (cart_id, product_id, quantity) values (23, 9, 32);
+insert into customer_cartitems (cart_id, product_id, quantity) values (25, 30, 23);
+insert into customer_cartitems (cart_id, product_id, quantity) values (17, 37, 18);
+insert into customer_cartitems (cart_id, product_id, quantity) values (14, 44, 42);
+insert into customer_cartitems (cart_id, product_id, quantity) values (23, 28, 8);
+insert into customer_cartitems (cart_id, product_id, quantity) values (46, 38, 46);
+insert into customer_cartitems (cart_id, product_id, quantity) values (33, 41, 34);
+insert into customer_cartitems (cart_id, product_id, quantity) values (41, 46, 3);
+insert into customer_cartitems (cart_id, product_id, quantity) values (46, 16, 31);
+insert into customer_cartitems (cart_id, product_id, quantity) values (23, 11, 34);
+insert into customer_cartitems (cart_id, product_id, quantity) values (2, 3, 41);
+insert into customer_cartitems (cart_id, product_id, quantity) values (25, 30, 38);
+insert into customer_cartitems (cart_id, product_id, quantity) values (30, 46, 50);
+insert into customer_cartitems (cart_id, product_id, quantity) values (36, 29, 26);
+insert into customer_cartitems (cart_id, product_id, quantity) values (35, 41, 3);
+insert into customer_cartitems (cart_id, product_id, quantity) values (33, 17, 21);
+insert into customer_cartitems (cart_id, product_id, quantity) values (35, 17, 13);
+insert into customer_cartitems (cart_id, product_id, quantity) values (6, 1, 46);
+insert into customer_cartitems (cart_id, product_id, quantity) values (10, 33, 33);
+insert into customer_cartitems (cart_id, product_id, quantity) values (26, 21, 40);
+insert into customer_cartitems (cart_id, product_id, quantity) values (24, 41, 10);
+insert into customer_cartitems (cart_id, product_id, quantity) values (48, 42, 7);
+insert into customer_cartitems (cart_id, product_id, quantity) values (28, 6, 8);
+insert into customer_cartitems (cart_id, product_id, quantity) values (9, 10, 45);
+insert into customer_cartitems (cart_id, product_id, quantity) values (8, 31, 49);
+insert into customer_cartitems (cart_id, product_id, quantity) values (28, 16, 1);
+insert into customer_cartitems (cart_id, product_id, quantity) values (28, 11, 32);
+insert into customer_cartitems (cart_id, product_id, quantity) values (21, 47, 26);
+insert into customer_cartitems (cart_id, product_id, quantity) values (18, 49, 21);
+insert into customer_cartitems (cart_id, product_id, quantity) values (18, 41, 41);
+insert into customer_cartitems (cart_id, product_id, quantity) values (13, 19, 48);
+insert into customer_cartitems (cart_id, product_id, quantity) values (2, 47, 37);
+insert into customer_cartitems (cart_id, product_id, quantity) values (47, 19, 18);
+insert into customer_cartitems (cart_id, product_id, quantity) values (42, 33, 45);
+insert into customer_cartitems (cart_id, product_id, quantity) values (6, 18, 47);
+insert into customer_cartitems (cart_id, product_id, quantity) values (34, 13, 12);
+insert into customer_cartitems (cart_id, product_id, quantity) values (20, 43, 49);
+insert into customer_cartitems (cart_id, product_id, quantity) values (11, 44, 14);
+insert into customer_cartitems (cart_id, product_id, quantity) values (45, 9, 48);
+insert into customer_cartitems (cart_id, product_id, quantity) values (25, 34, 34);
+insert into customer_cartitems (cart_id, product_id, quantity) values (2, 38, 32);
+insert into customer_cartitems (cart_id, product_id, quantity) values (30, 15, 49);
+insert into customer_cartitems (cart_id, product_id, quantity) values (10, 2, 30);
+insert into customer_cartitems (cart_id, product_id, quantity) values (31, 39, 35);
+insert into customer_cartitems (cart_id, product_id, quantity) values (47, 33, 29);
+insert into customer_cartitems (cart_id, product_id, quantity) values (34, 18, 44);
+insert into customer_cartitems (cart_id, product_id, quantity) values (48, 43, 43);
+insert into customer_cartitems (cart_id, product_id, quantity) values (30, 21, 17);
+insert into customer_cartitems (cart_id, product_id, quantity) values (5, 25, 34);
+insert into customer_cartitems (cart_id, product_id, quantity) values (26, 49, 46);
+insert into customer_cartitems (cart_id, product_id, quantity) values (16, 7, 43);
+insert into customer_cartitems (cart_id, product_id, quantity) values (34, 32, 1);
+insert into customer_cartitems (cart_id, product_id, quantity) values (1, 13, 12);
+insert into customer_cartitems (cart_id, product_id, quantity) values (44, 1, 45);
+insert into customer_cartitems (cart_id, product_id, quantity) values (39, 21, 23);
+insert into customer_cartitems (cart_id, product_id, quantity) values (5, 25, 43);
+insert into customer_cartitems (cart_id, product_id, quantity) values (24, 8, 17);
+insert into customer_cartitems (cart_id, product_id, quantity) values (30, 43, 29);
+insert into customer_cartitems (cart_id, product_id, quantity) values (39, 40, 50);
+insert into customer_cartitems (cart_id, product_id, quantity) values (38, 45, 18);
+insert into customer_cartitems (cart_id, product_id, quantity) values (43, 33, 38);
+insert into customer_cartitems (cart_id, product_id, quantity) values (13, 31, 39);
+insert into customer_cartitems (cart_id, product_id, quantity) values (27, 28, 9);
+insert into customer_cartitems (cart_id, product_id, quantity) values (15, 42, 46);
+insert into customer_cartitems (cart_id, product_id, quantity) values (33, 48, 35);
+insert into customer_cartitems (cart_id, product_id, quantity) values (18, 33, 29);
+insert into customer_cartitems (cart_id, product_id, quantity) values (5, 45, 5);
+insert into customer_cartitems (cart_id, product_id, quantity) values (19, 48, 50);
+insert into customer_cartitems (cart_id, product_id, quantity) values (35, 27, 28);
+insert into customer_cartitems (cart_id, product_id, quantity) values (44, 3, 26);
+insert into customer_cartitems (cart_id, product_id, quantity) values (22, 14, 37);
+insert into customer_cartitems (cart_id, product_id, quantity) values (20, 12, 50);
+insert into customer_cartitems (cart_id, product_id, quantity) values (2, 28, 16);
+insert into customer_cartitems (cart_id, product_id, quantity) values (48, 27, 32);
+insert into customer_cartitems (cart_id, product_id, quantity) values (48, 9, 44);
+insert into customer_cartitems (cart_id, product_id, quantity) values (40, 29, 15);
+insert into customer_cartitems (cart_id, product_id, quantity) values (38, 44, 34);
+insert into customer_cartitems (cart_id, product_id, quantity) values (28, 6, 9);
+insert into customer_cartitems (cart_id, product_id, quantity) values (17, 8, 15);
+insert into customer_cartitems (cart_id, product_id, quantity) values (28, 24, 9);
+insert into customer_cartitems (cart_id, product_id, quantity) values (26, 15, 24);
+insert into customer_cartitems (cart_id, product_id, quantity) values (50, 8, 35);
+insert into customer_cartitems (cart_id, product_id, quantity) values (31, 34, 18);
+insert into customer_cartitems (cart_id, product_id, quantity) values (19, 30, 5);
+insert into customer_cartitems (cart_id, product_id, quantity) values (36, 45, 32);
+insert into customer_cartitems (cart_id, product_id, quantity) values (38, 48, 8);
+insert into customer_cartitems (cart_id, product_id, quantity) values (17, 14, 15);
+insert into customer_cartitems (cart_id, product_id, quantity) values (11, 13, 7);
+insert into customer_cartitems (cart_id, product_id, quantity) values (40, 25, 31);
+insert into customer_cartitems (cart_id, product_id, quantity) values (46, 23, 8);
+insert into customer_cartitems (cart_id, product_id, quantity) values (2, 34, 19);
+insert into customer_cartitems (cart_id, product_id, quantity) values (23, 40, 31);
+insert into customer_cartitems (cart_id, product_id, quantity) values (45, 40, 43);
+insert into customer_cartitems (cart_id, product_id, quantity) values (24, 39, 26);
+insert into customer_cartitems (cart_id, product_id, quantity) values (6, 26, 36);
+insert into customer_cartitems (cart_id, product_id, quantity) values (4, 35, 35);
