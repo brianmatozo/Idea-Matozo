@@ -3,20 +3,6 @@ create schema idea_matozo;
 use idea_matozo;
 
 
--- 1 - user
--- 2 - user details
--- 3 - category
--- 4 - products
--- 5 - payment methods
--- 6 - orders
--- 7 - orderitems
--- 8 - promotions
--- 9 - customers
--- 10 - customers cart
--- 11 - cart items
--- 12 - review
-
-
 
 -- tabla usuarios --
 CREATE TABLE user (
@@ -70,7 +56,7 @@ create table orders(
 		order_id int primary key auto_increment,
         user_id int,
         order_date timestamp default current_timestamp,
-        total_amount decimal(10,2),
+        total_amount decimal(20,2),
         payment_method_id INT,
         FOREIGN KEY (payment_method_id) REFERENCES payment_methods(payment_method_id),
         status ENUM('Pending', 'Shipped', 'Delivered') DEFAULT 'Pending',
@@ -82,12 +68,12 @@ create table orders(
 -- varios items (product_id, order_item_id) pueden pertenecer a una sola orden (order_id) --*/
 create table orderitems(
 		order_item_id int primary key auto_increment,
-        order_id int not null,
+        order_id int,
         foreign key (order_id) references orders(order_id),
         product_id int not null,
         foreign key (product_id) references products(product_id),
         quantity int,
-        subtotal decimal(10,2)
+        subtotal decimal(20,2)
 );
 
 /*tabla de promociones
@@ -120,7 +106,7 @@ CREATE TABLE customer_cart (
 		cart_id INT PRIMARY KEY AUTO_INCREMENT,
 		customer_id INT,
 		order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-		total_amount DECIMAL(10, 2),
+		total_amount DECIMAL(20, 2),
 		status ENUM('Pending', 'Shipped', 'Delivered') DEFAULT 'Pending',
 		shipping_address VARCHAR(255),
 		payment_method_id INT,
@@ -139,7 +125,7 @@ create table customer_cartitems(
         product_id int,
         foreign key (product_id) references products(product_id),
         quantity int,
-        subtotal decimal(10,2)
+        subtotal decimal(20,2)
 );
 
 /*tabla de reviews

@@ -11,7 +11,7 @@ insert into user (username, password, email) values ('thullins8', 'yC5<8|b=/U', 
 insert into user (username, password, email) values ('rhulburd9', 'xI2,!sKU(', 'aorneblow9@shareasale.com');
 -- 10 user details
 insert into user_details (firstname, lastname, address, phone_number) values ('Willabella', 'Dansie', '43 Ramsey Junction', '196-378-4055');
-insert into user_details (firstname, lastname, address, phone_number) values ('Karel', 'Shorte', '21 Thierer Terrace', '866-340-6285');
+insert into user_details (firstname, lastname, address, phone_number) values ('Karol', 'Shorte', '21 Thierer Terrace', '866-340-6285');
 insert into user_details (firstname, lastname, address, phone_number) values ('Sue', 'Chirm', '95 Dixon Terrace', '289-841-5058');
 insert into user_details (firstname, lastname, address, phone_number) values ('Lawton', 'O''Lyhane', '0964 Springview Way', '895-315-9088');
 insert into user_details (firstname, lastname, address, phone_number) values ('Adore', 'Wickwarth', '01340 Melby Center', '937-635-3255');

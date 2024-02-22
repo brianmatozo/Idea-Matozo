@@ -74,7 +74,6 @@ values (
 Select * from cart_view;
 
 
-
 -- promocion siempre activa
 INSERT INTO promotions (promotion_name,description,discount_type,discount_value,min_purchase_amount,start_date,end_date,active)
 VALUES ('Promo Activa','Esta Promocion siempre esta activa','Percentage',10.00,0.00,'2000-01-01','2099-12-31',TRUE);
